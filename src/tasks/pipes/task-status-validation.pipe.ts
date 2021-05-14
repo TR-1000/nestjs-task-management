@@ -1,5 +1,5 @@
 import { ArgumentMetadata, BadRequestException, PipeTransform } from "@nestjs/common";
-import { TaskStatus } from "../task.model";
+import { TaskStatus } from "../task-status.enums";
 
 
 
@@ -27,6 +27,6 @@ export class TaskStatusValidationPipe implements PipeTransform {
         }
 
         return value;
-        
+    
     }
 }
